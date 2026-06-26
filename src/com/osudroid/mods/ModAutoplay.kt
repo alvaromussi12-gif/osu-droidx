@@ -10,6 +10,8 @@ class ModAutoplay : Mod() {
     override val type = ModType.Automation
     override val isValidForMultiplayer = false
     override val isValidForMultiplayerAsFreeMod = false
+    // Enable ranked scoring for autoplay
+    override val isRanked = true
     override val incompatibleMods = super.incompatibleMods + arrayOf(
         ModRelax::class, ModAutopilot::class, ModPerfect::class, ModSuddenDeath::class
     )
